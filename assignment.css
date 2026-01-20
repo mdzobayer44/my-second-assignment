@@ -64,6 +64,8 @@ body {
 /* Desktop Navbar (1000px) */
 .desktop-frame { width: 1000px; }
 
+
+
 .navbar-desktop {
     height: 80px;
     display: flex;
@@ -72,6 +74,7 @@ body {
     padding: 0 40px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
+
 
 /* Logo Styling */
 .logo {
@@ -160,6 +163,7 @@ body {
 .waveform-wrap {
     position: absolute;
     width: 110%; 
+    height: 400px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -268,3 +272,107 @@ body {
     text-align: center;
 }
 
+/* Container Spacing */
+.about-section {
+    padding: 80px 40px;
+    background-color: #0b011d; /* Matches your dark theme */
+    text-align: center;
+    color: white;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+}
+
+.section-title {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.about-text, .about-text-highlight {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+
+/* Divider Line */
+.section-divider {
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 60px auto;
+    width: 80%;
+}
+
+/* Stats Grid Layout */
+.stats-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.stat-item {
+    flex: 1;
+}
+
+.stat-number {
+    font-size: 48px;
+    font-weight: 900;
+    color: #00FFA3; /* That bright green from your screen */
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #888888;
+    text-transform: uppercase;
+}
+
+.star {
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+/* Mobile Section Container */
+.about-section-mobile {
+    padding: 60px 20px;
+    background-color: #0b011d;
+    text-align: center;
+    color: #ffffff; /* Ensures text is white */
+}
+
+/* Mobile Stats Grid (2 columns, 2 rows) */
+.stats-grid-mobile {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* This creates the 2x2 look */
+    gap: 40px 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.stat-number {
+    font-size: 36px; /* Slightly smaller for mobile screens */
+    font-weight: 900;
+    color: #00FFA3; /* The neon green from your stats */
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 10px;
+    color: #888888;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Divider Line */
+.section-divider {
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 40px auto;
+    width: 90%;
+}
