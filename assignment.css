@@ -112,7 +112,7 @@ body {
 }
 
 /* Mobile Navbar (600px) */
-.mobile-frame { width: 600px; }
+.mobile-frame { width: 500px; }
 
 .navbar-mobile {
     height: 70px;
@@ -141,5 +141,130 @@ body {
 .preview-body {
     height: 100%;
     background: radial-gradient(circle at top, #1a023a 0%, #0b011d 50%);
+}
+
+
+.hero-container {
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    overflow: hidden;
+}
+
+
+.waveform-wrap {
+    position: absolute;
+    width: 110%; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; 
+}
+.bg-wave { width: 100%; opacity: 0.5; }
+
+
+.hero-main-content {
+    position: relative;
+    z-index: 2; 
+    text-align: center;
+}
+
+.mic-badge-group {
+    position: relative;
+    margin-bottom: 25px;
+    display: inline-block;
+}
+
+.gradient-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    
+    background: linear-gradient(135deg, #FFD600 0%, #FF00E5 45%, #7000FF 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 40px rgba(112, 0, 255, 0.3);
+}
+
+.mic-img { width: 70px; height: auto; }
+
+/* 3. NEW TAG */
+.new-tag {
+    position: absolute;
+    top: 10px;
+    right: -5px;
+    background: #00FFA3;
+    color: #000000;
+    font-size: 11px;
+    font-weight: 900;
+    padding: 4px 10px;
+    border-radius: 20px;
+    z-index: 3;
+}
+
+/* 4. BUTTONS (HIGHLIGHTED FOR LOGO ICONS) */
+.cta-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.btn-icon { width: 18px; height: 18px; }
+
+.btn-listen {
+    background: linear-gradient(90deg, #FF00E5, #7000FF);
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.btn-sub-outline {
+    background: transparent;
+    border: 1.5px solid #00FFA3;
+    color: #00FFA3;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+/* Mobile Adjustments */
+.mobile-frame .gradient-circle { width: 150px; height: 150px; }
+.mobile-frame .main-title { font-size: 36px; }
+
+
+.main-title {
+    color: #ffffff !important; 
+    font-size: 56px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.main-desc {
+    color: #ffffff !important; 
+    font-size: 18px;
+    opacity: 0.9;
+    max-width: 500px;
+    margin: 0 auto 40px auto;
+    line-height: 1.5;
+    text-align: center;
 }
 
