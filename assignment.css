@@ -275,7 +275,7 @@ body {
 /* Container Spacing */
 .about-section {
     padding: 80px 40px;
-    background-color: #0b011d; /* Matches your dark theme */
+    background-color: #0b011d; 
     text-align: center;
     color: white;
 }
@@ -322,7 +322,7 @@ body {
 .stat-number {
     font-size: 48px;
     font-weight: 900;
-    color: #00FFA3; /* That bright green from your screen */
+    color: #00FFA3; 
     margin-bottom: 10px;
 }
 
@@ -343,22 +343,22 @@ body {
     padding: 60px 20px;
     background-color: #0b011d;
     text-align: center;
-    color: #ffffff; /* Ensures text is white */
+    color: #ffffff; 
 }
 
 /* Mobile Stats Grid (2 columns, 2 rows) */
 .stats-grid-mobile {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* This creates the 2x2 look */
+    grid-template-columns: 1fr 1fr; 
     gap: 40px 20px;
     max-width: 500px;
     margin: 0 auto;
 }
 
 .stat-number {
-    font-size: 36px; /* Slightly smaller for mobile screens */
+    font-size: 36px; 
     font-weight: 900;
-    color: #00FFA3; /* The neon green from your stats */
+    color: #00FFA3; 
     margin-bottom: 5px;
 }
 
@@ -375,4 +375,207 @@ body {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     margin: 40px auto;
     width: 90%;
+}
+
+.features-section {
+    padding: 100px 40px;
+    background-color: #0b011d;
+    text-align: center;
+    color: white;
+}
+
+.features-main-title {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 60px;
+}
+
+/* The Grid Layout */
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    grid-template-rows: auto auto;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Card Styling */
+.feature-card {
+    background: rgba(255, 255, 255, 0.05); 
+    border-radius: 24px;
+    padding: 40px;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.feature-card h3 {
+    font-size: 22px;
+    margin: 20px 0 15px 0;
+}
+
+.feature-card p {
+    color: #aaaaaa;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+/* Specific Card Shapes */
+.tall {
+    grid-row: span 1;
+}
+
+.right-features-column {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.wide {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 30px;
+}
+
+.medium {
+    grid-column: span 1;
+}
+
+
+.icon-wrap {
+    font-size: 30px;
+    background: linear-gradient(45deg, #ff00ff, #ffff00); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+/* Layout Container */
+.features-section {
+    padding: 80px 40px;
+    background-color: #0b011d; 
+    color: white;
+    text-align: center;
+}
+
+.features-main-title {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+/* Bento Box Grid Layout */
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr; 
+    grid-template-rows: auto auto;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Card Styling */
+.feature-card {
+    background: #150a26; 
+    border-radius: 25px;
+    padding: 35px;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.feature-card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    color: #a19bb3;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+/* === LOGO IMAGE STYLE === */
+.feature-logo {
+    width: 40px;     
+    height: 40px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    display: block;
+}
+
+/* Special Layout for Wide Cards */
+.right-features-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.feature-card.wide {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 25px 35px;
+}
+
+.feature-card.wide .feature-logo {
+    margin-bottom: 0; 
+}
+
+/* Container styling */
+.features-section-mobile {
+    padding: 60px 20px;
+    background-color: #0b011d;
+    text-align: center;
+    color: white;
+}
+
+.features-title-mobile {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+/* Vertical Stack Layout */
+.features-container-mobile {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+}
+
+/* Card Styling */
+.feature-card-mobile {
+    background: #150a26;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.feature-card-mobile h3 {
+    font-size: 20px;
+    margin: 15px 0 10px 0;
+}
+
+.feature-card-mobile p {
+    font-size: 14px;
+    color: #a19bb3;
+    line-height: 1.5;
+}
+
+/* Logo Sizing */
+.icon-box-mobile {
+    display: flex;
+    align-items: center;
+}
+
+.mobile-feature-logo {
+    width: 35px; /* Size for mobile screens */
+    height: auto;
+    object-fit: contain;
 }
