@@ -112,7 +112,20 @@ body {
     display: flex;
     align-items: center;
     gap: 8px;
+gap: 8px;
+    animation: subscribe-wiggle 2s infinite; 
 }
+
+@keyframes subscribe-wiggle {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(-5deg); } 
+    20% { transform: rotate(5deg); }
+    30% { transform: rotate(-5deg); }
+    40% { transform: rotate(5deg); }
+    50% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+}
+
 
 /* Mobile Navbar (600px) */
 .mobile-frame { width: 500px; }
@@ -212,7 +225,7 @@ body {
     z-index: 3;
 }
 
-/* 4. BUTTONS (HIGHLIGHTED FOR LOGO ICONS) */
+
 .cta-group {
     display: flex;
     gap: 15px;
@@ -346,7 +359,7 @@ body {
     color: #ffffff; 
 }
 
-/* Mobile Stats Grid (2 columns, 2 rows) */
+
 .stats-grid-mobile {
     display: grid;
     grid-template-columns: 1fr 1fr; 
@@ -905,4 +918,141 @@ body {
     width: 20px; 
     height: auto;
     opacity: 0.9;
+}
+
+.techwave-footer {
+    background-color: #0b011d; 
+    padding: 80px 0;
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+    background-image: url('footer-bg.png');
+}
+
+
+
+.techwave-footer::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: url('wave-pattern-image.png'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.footer-brand {
+    font-size: 56px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    letter-spacing: -1px;
+}
+
+/* Gradient effect for "Wave" */
+.footer-brand span {
+    background: linear-gradient(to right, #ff00ff, #7000ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer-platforms {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin-bottom: 40px;
+}
+
+.platform-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #a19bb3; 
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.platform-link:hover {
+    color: white;
+}
+
+/* Platform Logo Sizing */
+.platform-link img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+.footer-copyright {
+    color: #5b546e;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+.mobile-footer {
+    background-color: #1a0b2e; 
+    
+    
+    background-image: url('footer-bg.png'); 
+    
+    /* Background Settings for Mobile */
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat;
+    
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+/* Logo Styling */
+.m-footer-logo {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.m-footer-logo span {
+    background: linear-gradient(to right, #ff00ff, #7000ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.m-footer-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.m-link-row {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.m-link-row a {
+    color: #a19bb3;
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.m-link-row img {
+    width: 20px; 
+    height: 20px;
+}
+
+/* Copyright Text */
+.m-copyright {
+    color: #665e75;
+    font-size: 12px;
+    opacity: 0.8;
 }
