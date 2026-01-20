@@ -1,0 +1,145 @@
+:root {
+    --bg-color: #0b011d;
+    --text-white: #ffffff;
+    --pink-gradient: linear-gradient(90deg, #ff00e5, #7000ff);
+    --btn-gradient: linear-gradient(90deg, #ffd600, #ff00e5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+/* Main Container (1920x2018) */
+.presentation-canvas {
+    width: 1920px;
+    height: 2018px;
+    background-color: #070110;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 100px Top Header */
+.page-title-section {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 80px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.title-desktop, .title-mobile {
+    color: #666;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.title-desktop { width: 1000px; }
+.title-mobile { width: 600px; margin-left: 80px; }
+
+/* Content Area */
+.content-container {
+    flex: 1;
+    display: flex;
+    padding: 40px 80px;
+    gap: 80px;
+}
+
+.frame {
+    background-color: var(--bg-color);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Desktop Navbar (1000px) */
+.desktop-frame { width: 1000px; }
+
+.navbar-desktop {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Logo Styling */
+.logo {
+    color: var(--text-white);
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.logo span {
+    background: var(--pink-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Nav Links */
+.nav-links a {
+    color: var(--text-white);
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+/* Subscribe Button */
+.btn-subscribe {
+    background: var(--btn-gradient);
+    border: none;
+    padding: 10px 24px;
+    border-radius: 50px;
+    color: var(--text-white);
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Mobile Navbar (600px) */
+.mobile-frame { width: 600px; }
+
+.navbar-mobile {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+
+/* Hamburger Icon */
+.hamburger-menu {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hamburger-menu span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: var(--text-white);
+}
+
+.preview-body {
+    height: 100%;
+    background: radial-gradient(circle at top, #1a023a 0%, #0b011d 50%);
+}
+
